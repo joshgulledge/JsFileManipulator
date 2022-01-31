@@ -1,20 +1,19 @@
 const fs = require("fs");
-const readNames = require('./FileReader');
+const readNames = require('./CsvReader');
 
-// let people = readNames('/Users/joshgulledge/Documents/Field Service/Territory.csv');
+// get name and address data
+let people = readNames('/Users/joshgulledge/Documents/Field Service/Territory.csv');
+console.log(people);
 
-console.log(readNames('/Users/joshgulledge/Documents/Field Service/Territory.csv'));
-// fs.writeFile('fileOne.txt', 'Hello Text from JS!', function(err) {
-//    if (err) {
-//       return console.error(err);
-//    }
-//    console.log("Data written successfully!");
-//    console.log("Let's read newly written data");
-//    // Read the newly written file and print all of its content on the console
-//    fs.readFile('fileOne.txt', function (err, data) {
-//       if (err) {
-//          return console.error(err);
-//       }
-//       console.log("Asynchronous read: " + data.toString());
-//    });
+// get letter data
+
+
+// combine each name and address to each letter
+
+// Object.values(people).forEach((person, index) => {
+//   fs.writeFile(`file${index}.txt`, `${person.name}`, function(err) {
+//      if (err) {
+//         return console.error(err);
+//      }
+//   });
 // });
